@@ -31,8 +31,6 @@ def get_wx_config():
     获取微信相关配置
     """
     comp_conf = get_weixin_config()
-    if not comp_conf:
-        return None
 
     # 检查微信配置的完整性
     if not comp_conf or not isinstance(comp_conf, dict):
